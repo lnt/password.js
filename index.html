@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Password verification</title>
+    <link href="style.css" rel="stylesheet" />
+</head>
+<body>
+
+
+<div>
+    <h1>Login <span>Enter details</span></h1>
+    <form>
+        <p>
+            <label for="username">Your login</label>
+            <input type="text" value="" placeholder="Enter Username" id="username">
+        </p>
+        <p>
+            <label for="password">Your password</label>
+            <input type="password" value="" placeholder="Enter Password" id="password" class="password">
+            <button id="unmask" class="unmask" type="button" title="Show/Hide Password">Unmask</button>
+            <div id="strength" class="strength"><div class="strengthbar" id="strengthbar"></div></div>
+            <div class="errormessage">OK</div>
+        </p>
+    </form>
+</div>
+
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+
+<script src="script.js"></script>
+</body>
+</html>
